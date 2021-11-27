@@ -1,0 +1,22 @@
+<div>
+<form
+name="form"
+(ngSubmit)="onSubmit()"
+#f="ngForm"
+novalidate
+>
+<div class="page-1">
+    <h1>your first number was:{{firstNumberis}}
+        <!-- <script>
+            document.getElementById("firstNumber").innerHTML='your first number was:', localStorage.getItem(firstNumber);
+        </script> -->
+    </h1>
+  <input type="text" placeholder="Enter your second number"  #secondNumber="ngModel" name="secondNumber" id="secondNumber"  [(ngModel)]="form.secondNumber">
+ 
+  
+     <button class="btn btn-outline-success"  type="reset" routerLink='two'>back</button> 
+     <button class="btn btn-outline-success" routerLinkActive="active" routerLink='' type="submit">Next</button> 
+  
+</div>
+</form>
+</div>

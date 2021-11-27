@@ -1,0 +1,21 @@
+<div>
+    <form
+    name="form"
+    (ngSubmit)="onSubmit()"
+    #f="ngForm"
+    novalidate
+    >
+    <div class="page-1">
+      <!-- <input type="text" placeholder="your result"  #result="ngModel" name="result" id="result"  [(ngModel)]="form.result"> -->
+     
+         <h1> your result is :{{finalResult}}</h1>
+         <button class="btn btn-outline-success" routerLinkActive="active" routerLink="two" type="menu">back</button> 
+         <button class="btn btn-outline-success" routerLinkActive="active" routerLink='' type="submit">Next</button> 
+      
+    </div>
+    </form>
+    </div>
+    <!-- <div> -->
+    <!-- <router-outlet></router-outlet>
+  <router-outlet name="page-1"></router-outlet> -->
+  <!-- <router-outlet name="page-2"></router-outlet></div> -->
